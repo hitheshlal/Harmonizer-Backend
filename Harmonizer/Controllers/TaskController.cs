@@ -69,6 +69,10 @@ namespace Harmonizer.Controllers
 
                 return Ok(result);
             }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
             catch (Exception ex)
             {
                 return BadRequest(ex);
@@ -87,6 +91,10 @@ namespace Harmonizer.Controllers
             {
                 var task = await _taskRepository.GetTaskById(taskid);
                 return Ok(task);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
             }
             catch (Exception ex)
             {
@@ -108,7 +116,12 @@ namespace Harmonizer.Controllers
             {
                 var task = await _taskRepository.DeleteTask(taskId);
                 return Ok(task);
-            }catch(Exception ex)
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex);
             }
@@ -129,7 +142,11 @@ namespace Harmonizer.Controllers
                 var result = await _taskRepository.GetTaskByUserId(userId);
                 return Ok(result);
             }
-            catch(Exception ex)
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex);
             }
@@ -142,6 +159,10 @@ namespace Harmonizer.Controllers
             {
                 var result = await _taskRepository.UpdateStatus(request);
                 return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { success = false, message = ex.Message });
             }
             catch (Exception ex)
             {
