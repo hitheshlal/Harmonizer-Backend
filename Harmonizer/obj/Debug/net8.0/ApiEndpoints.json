@@ -1,0 +1,135 @@
+[
+  {
+    "ContainingType": "Harmonizer.Controllers.AuthController",
+    "Method": "GetUserDetailsById",
+    "RelativePath": "api/auth/GetUserDetailsById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.AuthController",
+    "Method": "LoginWithGoogle",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequestDTO",
+        "Type": "Harmonizer.DTO.LoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.TaskController",
+    "Method": "CreateTask",
+    "RelativePath": "create task",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskDTO",
+        "Type": "Harmonizer.DTO.TaskDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.TaskController",
+    "Method": "DeleteTask",
+    "RelativePath": "DeleteTask",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.TaskController",
+    "Method": "EditTask",
+    "RelativePath": "EditTask",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "taskDTO",
+        "Type": "Harmonizer.DTO.TaskDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.TaskController",
+    "Method": "GetTaskById",
+    "RelativePath": "GetTaskById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskid",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.TaskController",
+    "Method": "GetTaskByUserId",
+    "RelativePath": "GetTaskByUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Harmonizer.Controllers.TaskController",
+    "Method": "UpdateOrderItemStatus",
+    "RelativePath": "updatestatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Harmonizer.DTO.updateStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

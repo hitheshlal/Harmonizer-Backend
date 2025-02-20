@@ -1,0 +1,9 @@
+﻿namespace Harmonizer.DTO
+{
+    public class LoginResponseDTO
+    {
+        public int Userid { get; set; }
+        public string Username { get; set; } 
+        public string Token { get; set; }
+    }
+}

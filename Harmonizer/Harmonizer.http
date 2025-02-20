@@ -1,0 +1,6 @@
+@Harmonizer_HostAddress = http://localhost:5162
+
+GET {{Harmonizer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
