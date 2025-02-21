@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Harmonizer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+469a1178d3582425619abebbe0282e6354f794b1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75e975f0ccf7ab982a20fad4e86987adeb47bbfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Harmonizer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Harmonizer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
